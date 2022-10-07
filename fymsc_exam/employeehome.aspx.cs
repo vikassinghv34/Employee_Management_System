@@ -8,7 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
-namespace fymsc_exam
+namespace tymsc_exam
 {
     public partial class employeehome : System.Web.UI.Page
     {

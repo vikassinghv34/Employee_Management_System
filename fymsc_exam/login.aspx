@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="fymsc_exam.login1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="tymsc_exam.login1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
 </asp:Content>
@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-6 mx-auto">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body" style="background-color: aliceblue;">
                         <div class="row">
                             <div class="col">
                                 <center>

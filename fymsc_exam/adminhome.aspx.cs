@@ -8,7 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
-namespace fymsc_exam
+namespace tymsc_exam
 {
     public partial class adminhome : System.Web.UI.Page
     {
@@ -31,8 +31,8 @@ namespace fymsc_exam
         {
             GridView1.Visible = false;
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["DBEmployeeConnection"].ToString());
-            SqlCommand searchcmd = new SqlCommand("SELECT tblEmp.EmpID, tblEmp.EmpName, tblEmp.EmpDesignation, tblEmp.EmpDepartment, tblEmp.EmpDateOfJoin, tblEmp.EmpSalary, tblLogin.UserName, tblLogin.Password, tblLogin.Role FROM     tblEmp INNER JOIN tblLogin ON tblEmp.EmpName = tblLogin.UserName WHERE(tblEmp.EmpDepartment = @empdepartment)", conn);
-            searchcmd.Parameters.AddWithValue("empdepartment",DropDownList1.SelectedValue);
+            SqlCommand searchcmd = new SqlCommand("SELECT tblEmp.StdID, tblEmp.StdName, tblEmp.StdFaculty, tblEmp.StdDepartment, tblEmp.StdDateOfBirth, tblEmp.StdPRN, tblLogin.UserName, tblLogin.Password, tblLogin.Role FROM tblEmp INNER JOIN tblLogin ON tblEmp.StdName = tblLogin.UserName WHERE(tblEmp.StdDepartment = @stddepartment)", conn);
+            searchcmd.Parameters.AddWithValue("stddepartment",DropDownList1.SelectedValue);
             conn.Open();
             GridView2.DataSource = searchcmd.ExecuteReader();
             GridView2.DataBind();

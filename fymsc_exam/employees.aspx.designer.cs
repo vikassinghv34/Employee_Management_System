@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace fymsc_exam
+namespace tymsc_exam
 {
 
 
@@ -24,40 +24,40 @@ namespace fymsc_exam
         protected global::System.Web.UI.WebControls.HyperLink btnback;
 
         /// <summary>
-        /// Requireempname control.
+        /// Requirestdname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator Requireempname;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Requirestdname;
 
         /// <summary>
-        /// empname control.
+        /// stdname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox empname;
+        protected global::System.Web.UI.WebControls.TextBox stdname;
 
         /// <summary>
-        /// empdesignation control.
+        /// stdfaculty control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList empdesignation;
+        protected global::System.Web.UI.WebControls.DropDownList stdfaculty;
 
         /// <summary>
-        /// empdepartment control.
+        /// stddepartment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList empdepartment;
+        protected global::System.Web.UI.WebControls.DropDownList stddepartment;
 
         /// <summary>
         /// department control.
@@ -69,58 +69,58 @@ namespace fymsc_exam
         protected global::System.Web.UI.WebControls.SqlDataSource department;
 
         /// <summary>
-        /// Requiredoj control.
+        /// Requiredob control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator Requiredoj;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Requiredob;
 
         /// <summary>
-        /// Rangedoj control.
+        /// Rangedob control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator Rangedoj;
+        protected global::System.Web.UI.WebControls.RangeValidator Rangedob;
 
         /// <summary>
-        /// empdoj control.
+        /// stddob control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox empdoj;
+        protected global::System.Web.UI.WebControls.TextBox stddob;
 
         /// <summary>
-        /// Requiresalary control.
+        /// Requireprn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator Requiresalary;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Requireprn;
 
         /// <summary>
-        /// Rangesalary control.
+        /// Reprn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator Rangesalary;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator Reprn;
 
         /// <summary>
-        /// empsalary control.
+        /// stdprn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox empsalary;
+        protected global::System.Web.UI.WebControls.TextBox stdprn;
 
         /// <summary>
         /// Requireusername control.
@@ -157,15 +157,6 @@ namespace fymsc_exam
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox password;
-
-        /// <summary>
-        /// role control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList role;
 
         /// <summary>
         /// btnregister control.

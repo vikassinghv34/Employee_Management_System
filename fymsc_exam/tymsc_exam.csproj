@@ -100,7 +100,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="editemployee.aspx" />
     <Content Include="employeehome.aspx" />
     <Content Include="employees.aspx" />
     <Content Include="img\employeemanagement.png" />
@@ -112,14 +111,12 @@
     <Content Include="logout.aspx" />
     <Content Include="profile.aspx" />
     <Content Include="registration.aspx" />
-    <Content Include="rough.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="search.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -129,13 +126,6 @@
     </Compile>
     <Compile Include="adminhome.aspx.designer.cs">
       <DependentUpon>adminhome.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="editemployee.aspx.cs">
-      <DependentUpon>editemployee.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="editemployee.aspx.designer.cs">
-      <DependentUpon>editemployee.aspx</DependentUpon>
     </Compile>
     <Compile Include="employeehome.aspx.cs">
       <DependentUpon>employeehome.aspx</DependentUpon>
@@ -193,20 +183,6 @@
     </Compile>
     <Compile Include="registration.aspx.designer.cs">
       <DependentUpon>registration.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="rough.aspx.cs">
-      <DependentUpon>rough.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="rough.aspx.designer.cs">
-      <DependentUpon>rough.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="search.aspx.cs">
-      <DependentUpon>search.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="search.aspx.designer.cs">
-      <DependentUpon>search.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace fymsc_exam
+namespace tymsc_exam
 {
 
 
@@ -33,31 +33,31 @@ namespace fymsc_exam
         protected global::System.Web.UI.WebControls.Label profilename;
 
         /// <summary>
-        /// empname control.
+        /// stdname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox empname;
+        protected global::System.Web.UI.WebControls.TextBox stdname;
 
         /// <summary>
-        /// profiledesignation control.
+        /// profilefaculty control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label profiledesignation;
+        protected global::System.Web.UI.WebControls.Label profilefaculty;
 
         /// <summary>
-        /// empdesignation control.
+        /// stdfaculty control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox empdesignation;
+        protected global::System.Web.UI.WebControls.TextBox stdfaculty;
 
         /// <summary>
         /// profiledepartment control.
@@ -69,49 +69,49 @@ namespace fymsc_exam
         protected global::System.Web.UI.WebControls.Label profiledepartment;
 
         /// <summary>
-        /// empdepartment control.
+        /// stddepartment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox empdepartment;
+        protected global::System.Web.UI.WebControls.TextBox stddepartment;
 
         /// <summary>
-        /// profiledoj control.
+        /// profiledob control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label profiledoj;
+        protected global::System.Web.UI.WebControls.Label profiledob;
 
         /// <summary>
-        /// empdoj control.
+        /// stddob control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox empdoj;
+        protected global::System.Web.UI.WebControls.TextBox stddob;
 
         /// <summary>
-        /// profilesalary control.
+        /// profileprn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label profilesalary;
+        protected global::System.Web.UI.WebControls.Label profileprn;
 
         /// <summary>
-        /// empsalary control.
+        /// stdprn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox empsalary;
+        protected global::System.Web.UI.WebControls.TextBox stdprn;
 
         /// <summary>
         /// profileusername control.

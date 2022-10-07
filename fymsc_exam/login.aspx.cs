@@ -8,7 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
-namespace fymsc_exam
+namespace tymsc_exam
 {
     public partial class login1 : System.Web.UI.Page
     {
@@ -23,7 +23,7 @@ namespace fymsc_exam
             SqlCommand emplogincmd = new SqlCommand("select UserName,Password,Role from tblLogin where UserName=@username and Password=@password and Role=@role",conn);
             emplogincmd.Parameters.AddWithValue("username", username.Text);
             emplogincmd.Parameters.AddWithValue("password", password.Text);
-            emplogincmd.Parameters.AddWithValue("role", "emp");
+            emplogincmd.Parameters.AddWithValue("role", "std");
 
             SqlCommand adminlogincmd = new SqlCommand("select UserName, Password, Role from tblLogin where UserName=@username and Password=@password and Role=@role", conn);
             adminlogincmd.Parameters.AddWithValue("username", username.Text);
@@ -38,7 +38,7 @@ namespace fymsc_exam
             if (emploginsdr.HasRows)
             {
                 Session["username"] = username.Text;
-                Session["role"] = "emp";
+                Session["role"] = "std";
                 Response.Redirect("employeehome.aspx");
             }
             else if (adminloginsdr.HasRows)
@@ -49,7 +49,7 @@ namespace fymsc_exam
             }
             else
             {
-                Label1.Text = "Credentions are not matched";
+                Label1.Text = "Username or password is incorrect.";
             }
             conn.Close();
         }

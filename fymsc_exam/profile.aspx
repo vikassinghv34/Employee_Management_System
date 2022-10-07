@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="profile.aspx.cs" Inherits="fymsc_exam.profile" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="profile.aspx.cs" Inherits="tymsc_exam.profile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -26,17 +26,17 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                <asp:TextBox runat="server" ID="empname" CssClass="form-control"></asp:TextBox>
+                                <asp:TextBox runat="server" ID="stdname" CssClass="form-control"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div class="col-md-4">
-                                <asp:Label runat="server" ID="profiledesignation" Text="Designation"></asp:Label>
+                                <asp:Label runat="server" ID="profilefaculty" Text="Faculty"></asp:Label>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                <asp:TextBox runat="server" ID="empdesignation" CssClass="form-control" ReadOnly="true"></asp:TextBox>
+                                <asp:TextBox runat="server" ID="stdfaculty" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -46,27 +46,27 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                <asp:TextBox runat="server" ID="empdepartment" CssClass="form-control" ReadOnly="true"></asp:TextBox>
+                                <asp:TextBox runat="server" ID="stddepartment" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div class="col-md-4">
-                                <asp:Label runat="server" ID="profiledoj" Text="Date of Join"></asp:Label>
+                                <asp:Label runat="server" ID="profiledob" Text="Date of Birth"></asp:Label>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <asp:TextBox ID="empdoj" CssClass="form-control" runat="server" TextMode="Date" ReadOnly="true"></asp:TextBox>
+                                    <asp:TextBox ID="stddob" CssClass="form-control" runat="server" TextMode="Date" ReadOnly="true"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
                         <div class="row mt-2">
                             <div class="col-md-4">
-                                <asp:Label runat="server" ID="profilesalary" Text="Salary"></asp:Label>
+                                <asp:Label runat="server" ID="profileprn" Text="PRN"></asp:Label>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <asp:TextBox ID="empsalary" runat="server" CssClass="form-control" TextMode="Number" ReadOnly="true"></asp:TextBox>
+                                    <asp:TextBox ID="stdprn" runat="server" CssClass="form-control" TextMode="Number" ReadOnly="true"></asp:TextBox>
                                 </div>
                             </div>
                         </div>

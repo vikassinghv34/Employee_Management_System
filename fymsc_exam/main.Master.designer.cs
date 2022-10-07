@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace fymsc_exam
+namespace tymsc_exam
 {
 
 

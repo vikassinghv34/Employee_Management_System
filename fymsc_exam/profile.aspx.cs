@@ -8,7 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
-namespace fymsc_exam
+namespace tymsc_exam
 {
     public partial class profile : System.Web.UI.Page
     {
@@ -18,7 +18,7 @@ namespace fymsc_exam
           
             if (Session["username"] != null)
             {
-                if (Session["role"].ToString() == "emp")
+                if (Session["role"].ToString() == "std")
                 {
                     btnback.NavigateUrl = "employeehome.aspx";
                 }
@@ -28,7 +28,7 @@ namespace fymsc_exam
                 }
                 if (!IsPostBack)
                 {
-                    SqlCommand regprofilecmd = new SqlCommand("select * from tblEmp where EmpName=@user", conn);
+                    SqlCommand regprofilecmd = new SqlCommand("select * from tblEmp where StdName=@user", conn);
                     regprofilecmd.Parameters.AddWithValue("user", Session["username"].ToString());
 
                     SqlCommand loginprofilecmd = new SqlCommand("select * from tblLogin where UserName=@username", conn);
@@ -39,11 +39,11 @@ namespace fymsc_exam
 
                     if (regreader.Read() && loginreader.Read())
                     {
-                        empname.Text = regreader["EmpName"].ToString();
-                        empdesignation.Text = regreader["EmpDesignation"].ToString();
-                        empdepartment.Text = regreader["EmpDepartment"].ToString();
-                        empdoj.Text = regreader["EmpDateOfJOin"].ToString();
-                        empsalary.Text = regreader["EmpSalary"].ToString();
+                        stdname.Text = regreader["StdName"].ToString();
+                        stdfaculty.Text = regreader["StdFaculty"].ToString();
+                        stddepartment.Text = regreader["StdDepartment"].ToString();
+                        stddob.Text = regreader["StdDateOfBirth"].ToString();
+                        stdprn.Text = regreader["StdPRN"].ToString();
                         username.Text = loginreader["UserName"].ToString();
                         password.Text = loginreader["Password"].ToString();
                         regreader.Close();
@@ -65,15 +65,17 @@ namespace fymsc_exam
             {
 
 
-                SqlCommand regupdate = new SqlCommand("Update tblEmp Set EmpDesignation=@empdesignation,EmpDateOfJoin=@empdoj,EmpDepartment=@empdepartment,EmpSalary=@empsalary Where EmpName=@user", conn);
+                SqlCommand regupdate = new SqlCommand("Update tblEmp Set StdName=@stdname,StdFaculty=@stdfaculty,StdDateOfBirth=@stddob,StdDepartment=@stddepartment,StdPRN=@stdprn Where StdName=@user", conn);
                 regupdate.Parameters.AddWithValue("user", Session["username"].ToString());
-                regupdate.Parameters.AddWithValue("empdesignation", empdesignation.Text);
-                regupdate.Parameters.AddWithValue("empdoj", empdoj.Text);
-                regupdate.Parameters.AddWithValue("empdepartment", empdepartment.Text);
-                regupdate.Parameters.AddWithValue("empsalary", empsalary.Text);
+                regupdate.Parameters.AddWithValue("stdname", stdname.Text);
+                regupdate.Parameters.AddWithValue("stdfaculty", stdfaculty.Text);
+                regupdate.Parameters.AddWithValue("stddob", stddob.Text);
+                regupdate.Parameters.AddWithValue("stddepartment", stddepartment.Text);
+                regupdate.Parameters.AddWithValue("stdprn", stdprn.Text);
 
-                SqlCommand loginupdate = new SqlCommand("Update tblLogin Set Password=@password Where UserName=@user", conn);
+                SqlCommand loginupdate = new SqlCommand("Update tblLogin Set UserName=@username,Password=@password Where UserName=@user", conn);
                 loginupdate.Parameters.AddWithValue("user", Session["username"].ToString());
+                loginupdate.Parameters.AddWithValue("username", username.Text);
                 loginupdate.Parameters.AddWithValue("password", password.Text);
 
                 conn.Open();

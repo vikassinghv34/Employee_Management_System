@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Configuration;
-namespace fymsc_exam
+namespace tymsc_exam
 {
     public partial class main : System.Web.UI.MasterPage
     {
@@ -17,7 +17,8 @@ namespace fymsc_exam
                 registrationnav.Visible = false;
                 logoutnav.Visible = true;
                 profilenav.Visible = true;
-                if (Session["role"].ToString() == "emp")
+                Console.Write(Session["role"]);
+                if (Session["role"].ToString() == "std")
                 {
                     employeesnav.Visible = false;
                     homeheader.NavigateUrl = "~/employeehome.aspx";

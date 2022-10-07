@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="fymsc_exam.main" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="tymsc_exam.main" %>
 
 <!DOCTYPE html>
 
@@ -76,7 +76,7 @@
                     Employee Management System
 
                 </asp:HyperLink>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -99,7 +99,7 @@
                             </a>
                         </li>
                         <li class="nav-item active">
-                            <a href="registration.aspx" runat="server" id="registrationnav" class="nav-link">Registeration
+                            <a href="registration.aspx" runat="server" id="registrationnav" class="nav-link">Registration
                             </a>
                         </li>
                         <li class="nav-item active">

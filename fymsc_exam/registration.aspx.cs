@@ -8,7 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
-namespace fymsc_exam
+namespace tymsc_exam
 {
     public partial class registration1 : System.Web.UI.Page
     {
@@ -20,17 +20,17 @@ namespace fymsc_exam
 
         protected void btnregister_Click(object sender, EventArgs e)
         {
-            SqlCommand regcmd = new SqlCommand("insert into tblEmp (EmpName,EmpDesignation,EmpDepartment,EmpDateOfJoin,EmpSalary) values(@empname,@empdesignation,@empdepartment,@empdoj,@empsalary)",conn);
-            regcmd.Parameters.AddWithValue("empname", empname.Text);
-            regcmd.Parameters.AddWithValue("empdesignation", empdesignation.SelectedValue);
-            regcmd.Parameters.AddWithValue("empdepartment", empdepartment.SelectedValue);
-            regcmd.Parameters.AddWithValue("empdoj", empdoj.Text);
-            regcmd.Parameters.AddWithValue("empsalary", empsalary.Text);
+            SqlCommand regcmd = new SqlCommand("insert into tblEmp (StdName,StdFaculty,StdDepartment,StdDateOfBirth,StdPRN) values(@stdname,@stdfaculty,@stddepartment,@stddob,@stdprn)",conn);
+            regcmd.Parameters.AddWithValue("stdname", stdname.Text);
+            regcmd.Parameters.AddWithValue("stdfaculty", stdfaculty.SelectedValue);
+            regcmd.Parameters.AddWithValue("stddepartment", stddepartment.SelectedValue);
+            regcmd.Parameters.AddWithValue("stddob", stddob.Text);
+            regcmd.Parameters.AddWithValue("stdprn", stdprn.Text);
 
             SqlCommand logincmd = new SqlCommand("insert into tblLogin (UserName,Password,Role) values(@username,@password,@role)",conn);
             logincmd.Parameters.AddWithValue("username", username.Text);
             logincmd.Parameters.AddWithValue("password", password.Text);
-            logincmd.Parameters.AddWithValue("role", "emp");
+            logincmd.Parameters.AddWithValue("role", "std");
 
             conn.Open();
 
@@ -39,6 +39,7 @@ namespace fymsc_exam
 
             if(r == l)
             {
+                Console.Write("Register SUccessfully...");
                 Response.Redirect("login.aspx");
             }
             
